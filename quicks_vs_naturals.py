@@ -37,7 +37,7 @@ def measure_time(func, data):
     end_time = time.time()
     return result, end_time - start_time
 
-# 10,000 elemanlı rastgele liste oluşturma
+# 1.000.000 elemanlı rastgele liste oluşturma
 numbers = [random.randint(1, 99999) for _ in range(1000000)]
 # Quicksort ölçümü
 qs_result, qs_time = measure_time(quicksort, numbers)
